@@ -1,0 +1,41 @@
+{
+  "manifest_version": 2,
+  "name": "コンテンツスクリプトデモ",
+  "version": "1.0",
+  "description": "特定のページでコンテンツスクリプトを実行します。",
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "https://www.notion.so/*"
+  ],
+  "background": {
+    "scripts": [
+      "notion.js"
+    ],
+    "persistent": false
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.notion.so/*"
+      ],
+      "js": [
+        "notion.js"
+      ]
+    }
+  ],
+  "commands": {
+    "click_new_memo_button": {
+      "suggested_key": {
+        "mac": "Command+Shift+Y"
+      },
+      "description": "アクションをトリガー"
+    },
+    "click_tab": {
+      "suggested_key": {
+        "mac": "Command+Shift+O"
+      },
+      "description": "アクションをトリガー"
+    }
+  }
+}
