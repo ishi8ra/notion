@@ -29,13 +29,19 @@
       "suggested_key": {
         "mac": "Command+Shift+Y"
       },
-      "description": "アクションをトリガー"
+      "description": "click_new_memo_button"
     },
     "click_tab": {
       "suggested_key": {
         "mac": "Command+Shift+O"
       },
-      "description": "アクションをトリガー"
+      "description": "click_tab"
+    },
+    "click_filter_by_tag": {
+      "suggested_key": {
+        "mac": "Command+Shift+M"
+      },
+      "description": "click_filter_by_tag"
     }
   }
 }
